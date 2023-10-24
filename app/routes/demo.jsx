@@ -15,8 +15,8 @@ import { Outlet, NavLink, Link } from "@remix-run/react";
 
 const menus = [
   {
-    name: "state",
-    to: "/demo/state",
+    name: "Election Analytics",
+    to: "/demo/chhattisgarh",
     icon: MapIcon,
     current: false,
   },

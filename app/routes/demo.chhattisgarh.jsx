@@ -123,20 +123,20 @@ function NavItem({ to, children }) {
 export default function DemandRoute() {
   const [open, setOpen] = useState(false);
   const navigation = [
-    { name: "Madhya Pradesh", href: "/demo/madhya", current: true },
+    {
+      name: "Chhattisgarh",
+      href: "/demo/chhattisgarh",
+      current: true,
+    },
     {
       name: "Rajasthan",
       href: "/demo/rajasthan",
       current: false,
     },
+    { name: "Madhya Pradesh", href: "/demo/madhya", current: false },
     {
       name: "Telangana",
       href: "/demo/telangana",
-      current: false,
-    },
-    {
-      name: "Chhattisgarh",
-      href: "/demo/chhattisgarh",
       current: false,
     },
     { name: "Mizoram", href: "/demo/mizoram", current: false },
@@ -166,18 +166,20 @@ export default function DemandRoute() {
           )}
         </Disclosure>
       </div>
-
-      <div className="m-4 grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div className="rounded-lg bg-white shadow-xl shadow-slate-900/10 relative flex flex-1 flex-col p-3 ">
-          <div className="mt-2 flex justify-center gap-2">
-            <h3 className="text-base font-medium uppercase text-gray-900">
-              chhattisgarh
-            </h3>
+      <div className="mx-4 my-2 rounded-lg bg-white shadow-xl">
+        <div className="flex items-center justify-between p-2 ">
+          <div className="m-2 flex-1">
+            <h2 className="text-3xl font-bold leading-7 text-gray-900">
+              Chhattisgarh Election Analytics
+            </h2>
           </div>
-
+        </div>
+      </div>
+      <div className="mx-4 my-2 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="rounded-lg bg-white shadow-xl shadow-slate-900/10 relative flex flex-1 flex-col p-3 ">
           <img className="flex items-center h-40" src={chha} alt="map" />
         </div>
-        <div className="rounded-lg bg-white shadow-xl shadow-slate-900/10 p-3">
+        <div className="rounded-lg bg-white shadow-xl shadow-slate-900/10">
           <div className="m-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
             <div className="p-3 rounded-md border">
               <h3 className="flex justify-center text-md font-medium text-gray-900 p-1 border-b">
