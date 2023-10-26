@@ -18,7 +18,7 @@ const menus = [
     name: "Election Analytics",
     to: "/demo/chhattisgarh",
     icon: MapIcon,
-    current: false,
+    current: true,
   },
   {
     name: "EDA",
@@ -30,7 +30,7 @@ const menus = [
     name: "Poll Dashboard",
     to: "/demo/polldash",
     icon: ChartBarIcon,
-    current: true,
+    current: false,
   },
   {
     name: "Sample",
@@ -90,6 +90,12 @@ const menus = [
     name: "Svg",
     to: "/demo/svg",
     icon: MapIcon,
+    current: false,
+  },
+  {
+    name: "Sentiment",
+    to: "/demo/sentiment",
+    icon: ChartBarIcon,
     current: false,
   },
 ];

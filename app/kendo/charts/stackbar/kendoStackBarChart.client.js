@@ -1,26 +1,35 @@
 import {
-    Chart,
-    ChartTitle,
-    ChartSeries,
-    ChartSeriesItem,
-    ChartCategoryAxis,
-    ChartCategoryAxisTitle,
-    ChartCategoryAxisItem,
-  } from "@progress/kendo-react-charts";
-  import "hammerjs";
+  Chart,
+  ChartSeries,
+  ChartSeriesItem,
+  ChartCategoryAxis,
+  ChartCategoryAxisItem,
+  ChartLegend,
+} from "@progress/kendo-react-charts";
+import "hammerjs";
   
-export function MultiStackBarChartContainer({categories,series,name,height=250}){
+export function MultiStackBarChartContainer({categories,series,name}){
     return (
-      <Chart style={{ height:250 }}>
-         {/* <ChartTitle text="Units sold"/>*/}
-          <ChartLegend position="top" orientation="horizontal" />
-          <ChartSeries>
+      <Chart style={{ height: 250 }}>
+        {/* <ChartTitle text="Units sold"/>*/}
+        <ChartLegend position="top" orientation="horizontal" />
+        <ChartCategoryAxis>
+          <ChartCategoryAxisItem categories={categories} />
+        </ChartCategoryAxis>
+        <ChartSeries>
           {series.map((s) => (
-          <ChartSeriesItem name={s.name} data={s.data} type="bar" stack={true} key={s.name} tooltip={{visible:true}} />
+            <ChartSeriesItem
+              name={s.name}
+              data={s.data}
+              type="bar"
+              stack={true}
+              key={s.name}
+              tooltip={{ visible: true }}
+            />
           ))}
-          </ChartSeries>
-           </Chart>
-       )
+        </ChartSeries>
+      </Chart>
+    );
      };
 
 //   export function SingleStackBarChartContainer({ categories, firstSeries }) {

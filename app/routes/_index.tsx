@@ -5,7 +5,7 @@ import { Link } from "@remix-run/react";
 import { useOptionalUser } from "~/utils";
 
 const navigation = [
-  { name: "Application", to: "/demo/dashboard/demand" },
+  { name: "Application", to: "/demo/chhattisgarh" },
   { name: "Features", to: "#" },
   { name: "Marketplace", to: "#" },
   { name: "Company", to: "#" },
@@ -178,7 +178,7 @@ export default function Example() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 key="start"
-                to="/demo/polldash"
+                to="/demo/chhattisgarh"
                 className="rounded-md bg-indigo-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Get started

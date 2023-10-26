@@ -389,7 +389,7 @@ export default function AgreementAnalysisRoute() {
         {/* charts */}
 
         <ul className="mx-4 my-4 grid grid-cols-1 grid-rows-2 gap-6 md:grid-cols-2">
-          {/* grid-row-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 */}
+         
           {kpiService_m.map((kpi) => (
             <li
               key={kpi.Name}
