@@ -15,6 +15,14 @@ const Fallback = () => {
     </div>;
   };
   
-export default function WrapperMultiBarChart({category, series}){
-    return typeof document !== "undefined" ? <MultiBarChartContainer categories={category} series={series} /> : <Fallback />
+export default function WrapperMultiBarChart({ category, series, color }) {
+  return typeof document !== "undefined" ? (
+    <MultiBarChartContainer
+      categories={category}
+      series={series}
+      color={color}
+    />
+  ) : (
+    <Fallback />
+  );
 }

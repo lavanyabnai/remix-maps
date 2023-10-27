@@ -54,8 +54,8 @@ export const sampleSeries_m = [
   {
     name: "",
     data: [4492, 3502, 2155, 1356, 618, 102],
+    
   },
- 
 ];
 
 export const npsCategories_m = [

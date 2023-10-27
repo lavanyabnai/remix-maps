@@ -9,7 +9,7 @@ import {
   ChartCategoryAxisItem,
 } from "@progress/kendo-react-charts";
 import "hammerjs";
-import { format } from "path";
+
 
 export function MultiColumnChartContainer({categories,series}){
     return (
@@ -26,8 +26,8 @@ export function MultiColumnChartContainer({categories,series}){
               data={s.data}
               type="column"
               key={s.name}
-                 
-                  tooltip={{visible:true}}
+              color={s.color}
+              tooltip={{ visible: true }}
             />
           ))}
         </ChartSeries>

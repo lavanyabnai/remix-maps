@@ -33,12 +33,6 @@ const menus = [
     current: false,
   },
   {
-    name: "Sample",
-    to: "/demo/table",
-    icon: TableCellsIcon,
-    current: false,
-  },
-  {
     name: "Chat",
     to: "/demo/chat",
     icon: ChatBubbleBottomCenterTextIcon,
@@ -95,6 +89,12 @@ const menus = [
   {
     name: "Sentiment",
     to: "/demo/sentiment",
+    icon: ChartBarIcon,
+    current: false,
+  },
+  {
+    name: "Survey",
+    to: "/demo/survey",
     icon: ChartBarIcon,
     current: false,
   },
