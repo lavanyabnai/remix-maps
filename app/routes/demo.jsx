@@ -32,36 +32,14 @@ const menus = [
     icon: ChartBarIcon,
     current: false,
   },
-  {
-    name: "Chat",
-    to: "/demo/chat",
-    icon: ChatBubbleBottomCenterTextIcon,
-    current: false,
-  },
-  {
-    name: "Map Filter",
-    to: "/demo/mappolls",
-    icon: MapIcon,
-    current: false,
-  },
+
   {
     name: "Map",
     to: "/demo/map",
     icon: MapPinIcon,
     current: false,
   },
-  {
-    name: "Actions",
-    to: "/demo/actions/overview",
-    icon: ArrowTrendingUpIcon,
-    current: false,
-  },
-  {
-    name: "Alerts",
-    to: "/demo/alerts",
-    icon: ExclamationTriangleIcon,
-    current: false,
-  },
+
   {
     name: "Economic Tracker",
     to: "/demo/economic",
@@ -74,12 +52,7 @@ const menus = [
     icon: IdentificationIcon,
     current: false,
   },
-  {
-    name: "Chart",
-    to: "/demo/chart",
-    icon: IdentificationIcon,
-    current: false,
-  },
+
   {
     name: "Svg",
     to: "/demo/svg",
@@ -98,6 +71,30 @@ const menus = [
     icon: ChartBarIcon,
     current: false,
   },
+  // {
+  //   name: "Chart",
+  //   to: "/demo/chart",
+  //   icon: IdentificationIcon,
+  //   current: false,
+  // },
+  // {
+  //   name: "Alerts",
+  //   to: "/demo/alerts",
+  //   icon: ExclamationTriangleIcon,
+  //   current: false,
+  // },
+  // {
+  //   name: "Chat",
+  //   to: "/demo/chat",
+  //   icon: ChatBubbleBottomCenterTextIcon,
+  //   current: false,
+  // },
+  // {
+  //   name: "Map Filter",
+  //   to: "/demo/mappolls",
+  //   icon: MapIcon,
+  //   current: false,
+  // },
 ];
 
 function classNames(...classes) {
@@ -165,7 +162,7 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        <div className="mb-2">
+        {/* <div className="mb-2">
           <Link to="/demo/appbar">
             <div
               className={classNames(
@@ -192,11 +189,11 @@ export default function Sidebar() {
               </h2>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* appbar */}
-      <div className="flex flex-1 flex-col overflow-y-auto bg-gray-100">
+      <div className="flex flex-1 flex-col overflow-y-auto bg-gray-100 w-full">
         <main>
           <Outlet />
         </main>

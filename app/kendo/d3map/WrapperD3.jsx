@@ -1,6 +1,6 @@
 // import {SingleAreaChartContainer, DoubleAreaChartContainer, TripleAreaChartContainer,MultiAreaChartContainer} from '~/clientOnly/chart/kendoAreaChart.client'
 // import {SingleAreaChartContainer, DoubleAreaChartContainer, TripleAreaChartContainer,MultiAreaChartContainer} from '~/kendo/charts/area/kendoAreaChart.client'
-import RenderMap from "~/kendo/d3map/d3Chart.client";
+import RenderMap from "./d3Chart.client";
 
 const Fallback = () => {
     return <div>
@@ -19,17 +19,3 @@ const Fallback = () => {
 export default function WrapperD3Chart(){
     return typeof document !== "undefined" ? <RenderMap /> : <Fallback />;
 }
-
-// export function WrapperTripleAreaChart({category, first, second, third, name}){
-//     return typeof document !== "undefined" ? <TripleAreaChartContainer categories={category} firstSeries={first} secondSeries={second} thirdSeries={third} name={name}/> : <Fallback />
-// }
-
-// export function WrapperDoubleAreaChart({category, first, second,name}){
-//   return typeof document !== "undefined" ? <DoubleAreaChartContainer categories={category} firstSeries={first} secondSeries={second} name={name}/> : <Fallback />
-// }
-
-// export function WrapperSingleAreaChart({category, first,name}){
-//   return typeof document !== "undefined" ? <SingleAreaChartContainer categories={category} firstSeries={first} name={name}/> : <Fallback />
-// }
-
-
